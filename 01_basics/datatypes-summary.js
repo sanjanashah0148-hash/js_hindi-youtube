@@ -29,3 +29,26 @@ const myFunction=function(){
 console.log(typeof bigNumber);
 console.log(typeof myFunction);//it is abject function 
 console.log(typeof anotherId);
+
+
+//stack(primitive)and heap memory(non-primitive)
+//for stack
+let myinstagramname="_sanjanashah._."
+
+let anothername=myinstagramname
+anothername="but_why_sanjana"
+
+console.log(anothername);
+console.log(myinstagramname);
+
+let userOne={
+    email:"sanajanshah0148@gmail.com",
+    registrationnumber:"20249026"
+}
+
+let userTwo=userOne
+
+userTwo.email="sanjana.20249026@mnnit.ac.in"
+
+console.log(userOne.email);
+console.log(userOne.email);// heap memory used hence original changes
