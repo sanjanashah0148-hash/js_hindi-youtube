@@ -41,3 +41,34 @@ function loginUsermessage(userfullname=Sam){
 
 console.log(loginUsermessage("Sanjana"))
 //in JS empty string as false and undefined as false value
+
+function CalculateCartPrice(val11,val2,...num1){//rest and spread operator
+    return num1
+}
+console.log(CalculateCartPrice(200,400,500,2000))
+
+const user={
+    username:"Sanjana",
+    price:256
+
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is${anyObject.price}`);
+
+}
+
+handleObject(user)
+handleObject({
+    username:"Sam",
+    price:399
+})
+
+const myNewArray=[200,400,100,600]
+
+function returnSecondvalue(getArray){
+    return getArray[1]
+
+}
+console.log(returnSecondvalue(myNewArray));
+console.log(returnSecondvalue([200,300,500,60]))
