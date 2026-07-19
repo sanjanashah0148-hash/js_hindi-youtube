@@ -35,6 +35,8 @@ console.log(typeof anotherId);
 //undefined-undefined
 //string-string
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 //stack(primitive)and heap memory(non-primitive)
 //for stack
 let myinstagramname="_sanjanashah._."
