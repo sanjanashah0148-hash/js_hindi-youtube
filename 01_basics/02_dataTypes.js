@@ -3,13 +3,16 @@
 console.log(3+3);
 console.log("Sanjana");
 
+//we most of the time avoid semicolon
+//readibility is most important
+
 let name="sanjana";
 let age=18;
 let isLoggesIn=false;
 let state;
 // number=> 2 to power 53
-//bigint
-//string
+//bigint-bhot bada number hai
+//string-used in both single and double quote
 //boolean=>true/false
 //null-standalone value
 //undefined
