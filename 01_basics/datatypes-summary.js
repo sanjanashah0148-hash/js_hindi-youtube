@@ -1,5 +1,5 @@
 //primitive
-//string,number,boolean,null,undefined,symbol,Bigint
+//string,number,boolean,null,undefined,symbol:to amke value unique,Bigint-all primitive:call by value means when changes is done it is in copy
 
 const score =100
 const scoreValue =100
@@ -12,7 +12,7 @@ const anotherId=Symbol('1234')
 console.log(id===anotherId)
 
 const bigNumber=2435235761786381263982132n
-//non-primitive(reference)
+//non-primitive(reference)-call by refernce
 //array,object,functions
 
 const heros=["shaktiman","naagraj","doga"];
@@ -29,7 +29,11 @@ const myFunction=function(){
 console.log(typeof bigNumber);
 console.log(typeof myFunction);//it is abject function 
 console.log(typeof anotherId);
-
+//datatypes
+//null-object
+//boolean-boolean
+//undefined-undefined
+//string-string
 
 //stack(primitive)and heap memory(non-primitive)
 //for stack
