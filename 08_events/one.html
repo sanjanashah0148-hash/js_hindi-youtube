@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <script>
+        // document.getElementById('owl').onclick=function(){
+        //     alert("owl clicked")
+        // }
+        //attachEvent
+        //jQuery
+        //type,timestamp,deafultPrevented
+        //target,to Element,srcElement,Currenttarget
+        //clientx,clientY,screenX,screenY
+        //altkey,ctrlkey,shiftkey,keyCode
+        // document.getElementId('images').addEventListener('click',function(e){
+        //     console.log("Clicked inside the UL");
+
+
+
+        //     //alert("owl clicked again")
+        // },false)
+
+        // document.getElementId('owl').addEventListener('click',function(e){
+        //     console.log("Clicked inside the UL");
+        //     e.stopPropagation()
+
+
+        //     //alert("owl clicked again")
+        // },false)
+
+        // document.getElementById('google').addEventListener('click',function(e){
+        //     e.preventDefault();
+        //     console.log("google clicked")
+            
+
+        // },false)
+
+    
+        document.querySelector('#images').addeventListener('click',function(e){
+            console.log(e.target.parentNode);
+            if(e.target.tagName==='IMG'){
+                let removeIt=e.target.parentNode
+                removeIt.remove()
+
+            }
+            
+            removeIt.parentNode.removechild(removeIt)
+        })
+
+
+        
+    </script>
+    
+</body>
+</html>
