@@ -28,6 +28,8 @@ User.prototype.encryptPassword=function(){
     return `${this.password}abc`
 
 }
+//trying to make a revision
+//just to continue streak
 
 const tea=new User("tea","tea@gmail.com","123")
 
