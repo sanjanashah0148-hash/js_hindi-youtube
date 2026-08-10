@@ -1,5 +1,5 @@
-//primitive
-//string,number,boolean,null,undefined,symbol:to amke value unique,Bigint-all primitive:call by value means when changes is done it is in copy
+//primitive:7 types
+//string,number,boolean,null,undefined,symbol:to make value unique,Bigint-all primitive:call by value means when changes is done it is in copy
 
 const score =100
 const scoreValue =100
@@ -9,10 +9,10 @@ let userEmail;
 const id=Symbol('1234')
 const anotherId=Symbol('1234')
 
-console.log(id===anotherId)
+console.log(id===anotherId);
 
 const bigNumber=2435235761786381263982132n
-//non-primitive(reference)-call by refernce
+//non-primitive(reference data types)-call by refernce
 //array,object,functions
 
 const heros=["shaktiman","naagraj","doga"];
@@ -23,9 +23,9 @@ let myObj = {
 
 
 const myFunction=function(){
-    console.log("hello sanjana")
+    console.log("hello sanjana");
 }
-
+ 
 console.log(typeof bigNumber);
 console.log(typeof myFunction);//it is abject function 
 console.log(typeof anotherId);
@@ -38,7 +38,8 @@ console.log(typeof anotherId);
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //stack(primitive)and heap memory(non-primitive)
-//for stack
+//for stack-primitive datatype
+//for heap-non-primitive datatype
 let myinstagramname="_sanjanashah._."
 
 let anothername=myinstagramname
@@ -54,7 +55,8 @@ let userOne={
 
 let userTwo=userOne
 
-userTwo.email="sanjana.20249026@mnnit.ac.in"
+userTwo.email="sanjana.20249026@mnnit.ac.in"//object can be accessed by dot aur object ki value
+
 
 console.log(userOne.email);
 console.log(userOne.email);// heap memory used hence original changes
