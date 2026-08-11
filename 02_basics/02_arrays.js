@@ -15,6 +15,7 @@ console.log(real_another_array);
 console.log(Array.isArray("Sanjana"))
 console.log(Array.from("Sanjana"))
 console.log(Array.from({name : "Sanjana"}))//intresting
+//directly samjah nahin aaa rha naam se ki array me elements kya lenee that u have to specify
 
 let score1=100
 let score2=200

@@ -1,6 +1,6 @@
 const score=400
 console.log(score)
-
+console.log(typeof(score));
 const balance=new Number(100)//explicitly defining number as datatype
 //it specifically shows that it is a number
 console.log(balance);

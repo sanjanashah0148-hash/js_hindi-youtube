@@ -26,8 +26,8 @@ console.log(newStringOne.trim());//trim reduce lot of extra spaces
 //trim works on white spaces and line terminator
 
 const url="https://sanjana.com/sanjana%20shah"//by browser those space converted into %20
-
+//actually browser ko space nhi smajhta hai
 console.log(url.replace('%20','-'));
-console.log('sundar');
-
+console.log(url.includes('sundar'));
+//use inpect or console to explain
 console.log(gameName.split('-'))//split on the basis of -
