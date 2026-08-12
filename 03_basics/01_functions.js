@@ -6,6 +6,7 @@ console.log("A");
 console.log("N");
 console.log("A");
 
+//how to amke funtion in order to make smthng to be done in lesser number of steps
 function saymyname(){
     console.log("S");
     console.log("A");
@@ -15,11 +16,11 @@ function saymyname(){
     console.log("N");
     console.log("A");
 }
-//saymyname()
+saymyname()
 
-// function addtwonumber(number1,number2){//these are paarmeters
-//     console.log(number1+number2);
-// }
+ function addtwonumber(number1,number2){//these are paarmeters
+     console.log(number1+number2);
+ }
 
 
 function addtwonumber(number1,number2){//these are paarmeters
@@ -27,6 +28,7 @@ function addtwonumber(number1,number2){//these are paarmeters
     // return result//after return whatever u write does not execute
     return number1+number2
 }
+
 const result=addtwonumber(3,4)//here datatype doesnt matter all get added and one more thing even null+int or string+string//these are argument
 console.log("Result: ",result)
 
@@ -42,7 +44,7 @@ function loginUsermessage(userfullname=Sam){
 console.log(loginUsermessage("Sanjana"))
 //in JS empty string as false and undefined as false value
 
-function CalculateCartPrice(val11,val2,...num1){//rest and spread operator
+function CalculateCartPrice(val1,val2,...num1){//rest and spread operator
     return num1
 }
 console.log(CalculateCartPrice(200,400,500,2000))
