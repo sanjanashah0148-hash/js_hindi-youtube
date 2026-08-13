@@ -25,7 +25,7 @@ function one(){
         console.log(username);
 
     }
-    //console.log(website);
+    console.log(website);
 
     two()//in JS line by line execution takes place
 
@@ -34,26 +34,31 @@ function one(){
 
 one()
 
-if(true){
-    const Username="sanjana"
-    if(Username==="Sanjana"){
-        const website="youtube"
-        console.log(Username+website);
-    }
-    //console.log(website);
-}
+ if(true){
+     const Username="sanjana"
+     if(Username==="Sanjana"){
+         const website="youtube"
+         //console.log(Username+website);
+     }
+     //console.log(website);to access website here is an error as at this point website scope is ended
+ }
 
-//console.log(username);
+console.log(username);
 
 // ++++++++++++++++++++++++++++++++++Intresting point+++++++++++++++++++++++++++++++++++++++
+ console.log(addone(5))
+ function addone(num){
+     return num+1
 
-function addone(num){
-    return num+1
+ }
+ 
 
-}
-addone(5)
+ const addTwo=function(num){
+     return num+2
+ }
+ addTwo(5)
 
-const addTwo=function(num){
-    return num+2
-}
-addTwo(5)
+ const addTwo=function(num){
+    return num + 2
+ }
+ addTwo()

@@ -15,35 +15,36 @@ const user={
 console.log(this);//when only this is printed we are in node environment hence empty
 //browser me jo global object hai vo hai windows object
 
-// function chai(){
-//     let username="Sanjana"
-//     console.log(this);
-//     console.log(this.username)
+ function chai(){
+     let username="Sanjana"
+     console.log(this);
+     console.log(this.username)
 
     
-// }
+ }
 
-// chai()
+ chai()
 
 // const chai=function(){
 //     let username="Sanjana"
 //     console.log(this.username);
     
 // }
-// const chai=()=>{
-//     let username="Sanjana"
-//     console.log(this);
+ const chai=()=>{
+     let username="Sanjana"
+     console.log(this);
     
 // }
 //arrow function me this use nahi kar sakte vese kar sakte hai
 //basic syntax of arrow function()=>{}
-// const addTwo=(num1,num2) => {
-//     return num1+num2
-// }
+    //this is elplicitly return function
+ const addTwo=(num1,num2) => {
+     return num1+num2
+ }
 
-// console.log(addTwo(3,4));//this was the basic parentheis
-//we can use it in different way also like:--
-//const addTwo=(num1,num2) => num1+num2
+ console.log(addTwo(3,4));//this was the basic parentheis
+//we can use it in different way also like:--IMPLICIT RETURN
+const addTwo=(num1,num2) => num1+num2
 const addTwo=(num1,num2) => (num1+num2)
 //after using curly braces we have to use return keyword otherwise not have to write return keyword
 // const addtwo=(num1,num2)=>{username:"sanjana"}
