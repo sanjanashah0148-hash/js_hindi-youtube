@@ -1,26 +1,26 @@
-// const coding=["js","ruby","java","python","cpp"]
+ const coding=["js","ruby","java","python","cpp"]
 
-// const values=coding.forEach((item)=>{
-//     console.log(item);
+const values=coding.forEach((item)=>{
+     console.log(item);
     
-// })
-// //console.log(values);//return is undefined
+ })
+ console.log(values);//return is undefined
 
 const myNums=[1,2,3,4,5,6,7,8,9,10];
 
-//const newNums=myNums.filter((num)=>num>4)//filter takes callback in it
+// const newNums=myNums.filter((num)=>num>4)//filter takes callback in it
 // const newNums=myNums.filter((num)=>{
 //     //num>4
 //     return num>4
 // })
 //console.log(newNums);//we get empty ARRAY//Actually when we use scope we should use parenthesis with return keyword to get values
 
-// const newNums=[]
+ const newNums=[]
 
-// myNums.forEach((num) => {
-//     if(num>4){
-//         newNums.push(num);//in order to add any number
-//     }
+ myNums.forEach((num) => {
+     if(num>4){
+          newNums.push(num);//in order to add any number
+     }
     
 // });
 // console.log(newNums);
