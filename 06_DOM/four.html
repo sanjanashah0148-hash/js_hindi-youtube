@@ -20,6 +20,7 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+    //it has to tranverse through a whole tree that is is a bit not optimised procress
 
     function addOptiLanguage(langName){
         const li=document.createElement('li');
@@ -32,7 +33,7 @@
     const secondlang=document.querySelector("li:nth-child(2)")
     console.log(secondlang);
     
-    //secondlang.innerHTML="Mojo" as it is optimised approach
+    //secondlang.innerHTML="Mojo" as it is optimised approach-hmesa optimised ki baat nahi ho sakti
     //another approach
     document.createElement('Li')
     newli.textContent="Mojo"
