@@ -6,27 +6,33 @@
     <title>Document</title>
 </head>
 <body style="background-color:#212121;">
+    <h1>Chai aur Code</h1>
 
 </body>
 <script>
+    const requestUrl='https://api.github.com/users/sanjanashah0148'
     const xhr=new XMLHttpRequest();
-    xhr.open('GET',requestURL)
+    xhr.open('GET',requestUrl)
     xhr.onreadystatechange=function(){
         console.log(xhr.readyState);
         if(xhr.readyState===4){
-            const data=JSON.parse(this.responseText)
-            console.log(typeof(data));
-            console.log(data.followers);
-            
-
-        }
-        
-
+             const data=JSON.parse(this.responseText)//this actually tells us for this response text
+             //JSON is used to convert to JSON datatype 
+             //this is actually for current context
+             console.log(typeof(data));
+             console.log(data.followers);
+         }
+         //document is actually not part of core javascript
     }
-    console.log(xhr.readyState);
+    //JS actually run by C++,it is actually a wrapper to core C++
+    //console.log("Here");
+    xhr.send()
+    // xhr.onreadystatechange=function(){
+    //     console.log(xhr.readyState);
+    // }
+    // console.log(xhr.readyState);
     
-    xhr.send();
-
+    // xhr.send();
 </script>
 
 </html>
